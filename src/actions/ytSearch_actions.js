@@ -1,7 +1,7 @@
 import Dispatcher from "../dispatcher";
 import ActionTypes from "../constants";
 import YTSearch from "youtube-api-search";
-const API_KEY = "AIzaSyBdVut9QCzqAHBzfDEh30yUp4E529som6s";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class YTSearchAction {
   videoSearch(searchTerm) {
